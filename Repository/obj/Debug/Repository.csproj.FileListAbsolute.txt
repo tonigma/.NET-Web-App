@@ -1,0 +1,14 @@
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\Repository.dll.config
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\Repository.dll
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\Repository.pdb
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\DataBase.dll
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\EntityFramework.dll
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\DataBase.pdb
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\DataBase.dll.config
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\EntityFramework.xml
+C:\Users\tonig\source\repos\PlacesProject\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tonig\source\repos\PlacesProject\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\tonig\source\repos\PlacesProject\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\tonig\source\repos\PlacesProject\Repository\obj\Debug\Repository.dll
+C:\Users\tonig\source\repos\PlacesProject\Repository\obj\Debug\Repository.pdb

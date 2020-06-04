@@ -1,0 +1,17 @@
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\ApplicationSeriveces.dll
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\ApplicationSeriveces.pdb
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\DataBase.dll
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\Repository.dll
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\EntityFramework.dll
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\DataBase.pdb
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\DataBase.dll.config
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\Repository.pdb
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\Repository.dll.config
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\EntityFramework.xml
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\obj\Debug\ApplicationSeriveces.csprojAssemblyReference.cache
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\obj\Debug\ApplicationSeriveces.csproj.CopyComplete
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\obj\Debug\ApplicationSeriveces.dll
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\obj\Debug\ApplicationSeriveces.pdb
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\ApplicationSeriveces.dll.config
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tonig\source\repos\PlacesProject\ApplicationSeriveces\bin\Debug\EntityFramework.SqlServer.xml

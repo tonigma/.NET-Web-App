@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ApplicationSeriveces.DTOs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ApplicationSeriveces.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:54881/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:complexType name="ArrayOfCountryDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CountryDTO" nillable="true" type="tns:CountryDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountryDTO" nillable="true" type="tns:ArrayOfCountryDTO" />
+  <xs:complexType name="CountryDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDTO">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Arrival" type="q1:DateTimeOffset" />
+          <xs:element minOccurs="0" name="Capital" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Population" type="xs:int" />
+          <xs:element minOccurs="0" name="PriceOfWaterBottle" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CountryDTO" nillable="true" type="tns:CountryDTO" />
+  <xs:complexType name="BaseDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseDTO" nillable="true" type="tns:BaseDTO" />
+  <xs:complexType name="ArrayOfRegionDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RegionDTO" nillable="true" type="tns:RegionDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegionDTO" nillable="true" type="tns:ArrayOfRegionDTO" />
+  <xs:complexType name="RegionDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryId" type="xs:int" />
+          <xs:element minOccurs="0" name="Landmark" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="RegionArrival" type="q2:DateTimeOffset" />
+          <xs:element minOccurs="0" name="RegionLanguage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegionPopulation" type="xs:int" />
+          <xs:element minOccurs="0" name="RegionPriceOfWaterBottle" type="xs:decimal" />
+          <xs:element minOccurs="0" name="country" nillable="true" type="tns:CountryDTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RegionDTO" nillable="true" type="tns:RegionDTO" />
+  <xs:complexType name="ArrayOfPlaceDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PlaceDTO" nillable="true" type="tns:PlaceDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlaceDTO" nillable="true" type="tns:ArrayOfPlaceDTO" />
+  <xs:complexType name="PlaceDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EntryTax" type="xs:decimal" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="PlaceArrival" type="q3:DateTimeOffset" />
+          <xs:element minOccurs="0" name="Placename" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Region" nillable="true" type="tns:RegionDTO" />
+          <xs:element minOccurs="0" name="RegionId" type="xs:int" />
+          <xs:element minOccurs="0" name="RoadToPlace" type="xs:int" />
+          <xs:element minOccurs="0" name="averageAge" type="xs:int" />
+          <xs:element minOccurs="0" name="distance" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PlaceDTO" nillable="true" type="tns:PlaceDTO" />
+</xs:schema>

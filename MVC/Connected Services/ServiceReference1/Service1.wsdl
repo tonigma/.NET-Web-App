@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54881/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54881/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54881/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ApplicationSeriveces.DTOs" />
+      <xsd:import schemaLocation="http://localhost:54881/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetCountrys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountrys" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCountrys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountrysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCountryById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCountryById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostCountry" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutCountry" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCountry" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllCountrysByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCountrysByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllCountrysByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCountrysByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRegionById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRegionById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostRegion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutRegion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllRegionsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRegionsByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllRegionsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRegionsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlaces_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlaces" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlaces_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlacesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlaceById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlaceById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlaceById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlaceByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllPlacesByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlacesByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllPlacesByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlacesByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetCountrys">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCountrys" message="tns:IService1_GetCountrys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCountrysResponse" message="tns:IService1_GetCountrys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCountryById" message="tns:IService1_GetCountryById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCountryByIdResponse" message="tns:IService1_GetCountryById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostCountry" message="tns:IService1_PostCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostCountryResponse" message="tns:IService1_PostCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutCountry" message="tns:IService1_PutCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutCountryResponse" message="tns:IService1_PutCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteCountry" message="tns:IService1_DeleteCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteCountryResponse" message="tns:IService1_DeleteCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCountrysByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllCountrysByName" message="tns:IService1_GetAllCountrysByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllCountrysByNameResponse" message="tns:IService1_GetAllCountrysByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRegions" message="tns:IService1_GetRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRegionsResponse" message="tns:IService1_GetRegions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRegionById" message="tns:IService1_GetRegionById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRegionByIdResponse" message="tns:IService1_GetRegionById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostRegion" message="tns:IService1_PostRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostRegionResponse" message="tns:IService1_PostRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutRegion" message="tns:IService1_PutRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutRegionResponse" message="tns:IService1_PutRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteRegion" message="tns:IService1_DeleteRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteRegionResponse" message="tns:IService1_DeleteRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRegionsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllRegionsByName" message="tns:IService1_GetAllRegionsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllRegionsByNameResponse" message="tns:IService1_GetAllRegionsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaces">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPlaces" message="tns:IService1_GetPlaces_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPlacesResponse" message="tns:IService1_GetPlaces_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPlaceById" message="tns:IService1_GetPlaceById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPlaceByIdResponse" message="tns:IService1_GetPlaceById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostPlace" message="tns:IService1_PostPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostPlaceResponse" message="tns:IService1_PostPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutPlace" message="tns:IService1_PutPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutPlaceResponse" message="tns:IService1_PutPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeletePlace" message="tns:IService1_DeletePlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeletePlaceResponse" message="tns:IService1_DeletePlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlacesByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllPlacesByName" message="tns:IService1_GetAllPlacesByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllPlacesByNameResponse" message="tns:IService1_GetAllPlacesByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCountrys">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCountrys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCountryById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostCountry">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutCountry">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCountry">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCountrysByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllCountrysByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRegionById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostRegion">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutRegion">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegion">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRegionsByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllRegionsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaces">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPlaces" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPlaceById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeletePlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlacesByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllPlacesByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:54881/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

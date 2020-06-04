@@ -1,0 +1,17 @@
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\PlacesService.dll.config
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\PlacesService.dll
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\PlacesService.pdb
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\ApplicationSeriveces.dll
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\DataBase.dll
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\Repository.dll
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\EntityFramework.dll
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\ApplicationSeriveces.pdb
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\DataBase.pdb
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\DataBase.dll.config
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\Repository.pdb
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\Repository.dll.config
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\bin\EntityFramework.xml
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\obj\Debug\PlacesService.csprojAssemblyReference.cache
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\obj\Debug\PlacesService.csproj.CopyComplete
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\obj\Debug\PlacesService.dll
+C:\Users\tonig\source\repos\PlacesProject\PlacesService\obj\Debug\PlacesService.pdb
