@@ -18,3 +18,4 @@ C:\Users\tonig\source\repos\PlacesProject\WcfService1\obj\Debug\WcfService1.cspr
 C:\Users\tonig\source\repos\PlacesProject\WcfService1\obj\Debug\WcfService1.csproj.CopyComplete
 C:\Users\tonig\source\repos\PlacesProject\WcfService1\obj\Debug\WcfService1.dll
 C:\Users\tonig\source\repos\PlacesProject\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\tonig\source\repos\PlacesProject\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
